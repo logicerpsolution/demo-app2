@@ -19,13 +19,15 @@ exports.Main = Component.specialize(/** @lends Main# */ {
  
    // exports.Main = Component.specialize(/** @lends Main# */ {
     templateDidLoad: {
-    value: function() {
-    var day = moment("Dec 25, 1995");
-    console.log("Test:", day);
+      value: function(event) {
+    console.log(this);
+    this.templateObjects.button.itemLinkElement.addEventListener("click",function(event){
+    console.log("test");
+});
 }
-                                    }
-                                    }
 
+   
+                                    
     
     
 });

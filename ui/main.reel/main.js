@@ -13,4 +13,19 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             this.super();
         }
     }
+    
+    
+    
+ 
+   // exports.Main = Component.specialize(/** @lends Main# */ {
+    templateDidLoad: {
+    value: function() {
+    var day = moment("Dec 25, 1995");
+    console.log("Test:", day);
+}
+                                    }
+                                    }
+
+    
+    
 });
